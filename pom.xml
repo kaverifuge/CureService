@@ -34,6 +34,13 @@
 	    <version>3.0.0-beta2</version> 
 	</dependency>
 	
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+	<dependency>
+	    <groupId>com.aventstack</groupId>
+	    <artifactId>extentreports</artifactId>
+	    <version>5.1.2</version>
+	</dependency>
+		
 		<dependency>
 		    <groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>

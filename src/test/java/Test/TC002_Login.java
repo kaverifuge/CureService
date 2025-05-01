@@ -19,8 +19,9 @@ public class TC002_Login extends BaseTest{
 			 System.out.println("TC002_Login_PASS");
 		 }else
 		 {
-			 Assert.assertTrue(false);
+			 
 			 System.out.println("TC002_Login_FAIL");
+			 Assert.assertTrue(false);
 			 
 		 }
 		 

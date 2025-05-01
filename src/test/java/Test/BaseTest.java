@@ -24,12 +24,11 @@ public class BaseTest {
 	public MakeAptPage ap ;
 	ReadUtilProperties rp ; 
 	public AptConfirmPage acp;
+	public String screenshotname="";
 	
 	@BeforeClass
 	@Parameters("browser")
 	public void setupBroswer(String browser) throws IOException {
-		
-		
 		 
 		switch(browser) {
 
@@ -88,6 +87,12 @@ public class BaseTest {
 		ap.clickDrawerOption();
 		ap.clickLogout();
 		
+	}
+	
+	
+	
+	public WebDriver getDriver() {
+	    return driver;
 	}
 	
 	@AfterClass

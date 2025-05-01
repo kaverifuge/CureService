@@ -17,14 +17,15 @@ public class TC004_Logout extends BaseTest{
 		login();
 		logoutbase();
 		
-		if(driver.getTitle().equals("CURA Healthcare Service")) {
+		if(driver.getTitle().equals("CURA Healthcare Service11")) {
 			
 			Assert.assertTrue(true);
 			System.out.println("TC004_Logout_PASS");
 		}else {
 			
-			Assert.assertTrue(false);
+			
 			System.out.println("TC004_Logout_FAIL");
+			Assert.assertTrue(false);
 		}
 	}
 }

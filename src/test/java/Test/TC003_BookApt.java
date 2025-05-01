@@ -36,8 +36,9 @@ public class TC003_BookApt extends BaseTest{
 		}
 		else {
 			
-			Assert.assertTrue(false);
+			
 			System.out.println("TC003_BookApt_FAIL");
+			Assert.assertTrue(false);
 		}
 		
 	}

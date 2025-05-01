@@ -2,13 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" thread-count="5">
 
+<listeners>
+<listener class-name="Utilities.MyListeners"></listener>
+</listeners>
+
   <test  name="chromebrowser">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="Test.TC001_ClickMakeAptbtn"/>
       <class name="Test.BaseTest"/>
       <class name="Test.TC003_BookApt"/>
-      <class name="Test.Login_DataDriven"/>
+      
       <class name="Test.TC004_Logout"/>
       <class name="Test.TC002_Login"/>
     </classes>
